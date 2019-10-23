@@ -22,4 +22,10 @@
 		<phone type="work">6660611</phone>
 		<notes>my best friend</notes>
 	</contact>
+	<contact>
+		<imie>Przemek</imie>
+		<nazwisko>Polak</nazwisko>
+		<adres>Kraków</adres>
+		<uczelnia>UEK</uczelnia>
+	</contact>	
 </contacts>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Films>
+    <film>
+        <Title year="1999" genre="dramat">Zielona Mila</Title>
+        <rating>8.6</rating>
+        <director>Frank Darabont</director>
+        <actors>Michael Clarke Duncan</actors>
+        <actors>Tom Hanks</actors>
+    </film>
+    <film>
+        <Title year="1993" genre="dramat">Lista Schindlera</Title>
+        <rating>8.3</rating>
+        <director>Steven Spielberg</director>
+        <actors>Liam Neeson</actors>
+        <actors>Ralph Fiennes</actors>
+    </film>
+    <film>
+        <Title year="2003" gatunek="fantasy">Władca Pierścieni: Powrót króla</Title>
+        <rating>8.4</rating>
+        <director>Peter Jackson</director>
+        <actors>Elijah Wood</actors>
+        <actors>Sean Astin</actors>
+    </film>
+    <film>
+        <Title year="2002" gatunek="fantasy">Władca Pierścieni: Dwie wieże</Title>
+        <rating>8.2</rating>
+        <director>Peter Jackson</director>
+        <actors>Elijah Wood</actors>
+        <actors>Sean Astin</actors>
+    </film>
+    <film>
+        <Title year="2002" gatunek="dramat">Pianista</Title>
+        <rating>8.3</rating>
+        <director>Roman Polański</director>
+        <actors>Adrien Brody</actors>
+        <actors>Thomas Kretschmann</actors>
+    </film>
+</Films>
