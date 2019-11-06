@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Try to guess</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<h1>Try to guess</h1>
+
+		<script>
+			// read user's number (popup window)
+			var usnum = prompt('Wpisz liczbę')
+			
+			// create a random number
+			var knum = Math.floor((Math.random() * 5) + 1)
+			// compare the numbers
+			console.log(knum)
+			if (usnum==knum) {
+				var zg = 'Zgadłeś'
+				alert(zg)
+			}
+
+			if (usnum!=knum) {
+				var bl = 'Nie zgadłeś' 
+				alert(bl)
+			}
+			// show results (popup window)
+			
+			
+		</script>
+	</body>
+</html>
