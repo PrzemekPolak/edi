@@ -6,7 +6,23 @@
 	</head>
 	<body>
 		<h1>Create mobile phone</h1>
+		<button onclick="funk()" id="button" type="button">Click</button>
 		<script>
+			var myphone = {
+				mark: 'Huawei',
+				year: 2017,
+				camera: true,
+				color: ['white', 'silver'],
+				specs: {screen:5, camera:10}
+			}
+			
+			function funk() {
+			alert('Mark: ' + myphone.mark + '\n'+'Year: ' + myphone.year + '\n' +
+			'Camera: ' + myphone.camera + '\n' +
+			'Colors: ' + myphone.color[0] + myphone.color[1] + '\n' +
+			'Specs: ' + 'screen: ' + myphone.specs.screen + ' ' + 'camera: ' + myphone.specs.camera)
+			}
+
 		</script>
 	</body>
 </html>
