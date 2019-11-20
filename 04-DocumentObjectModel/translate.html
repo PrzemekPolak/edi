@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Create DOM elements</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<h3 id='tekst'>Sticks and stones may break my bones, but words will never harm me.</h3>
+		<script>
+			// a JavaScript code here ...
+			document.getElementById('tekst').onmouseover=function(){funon()};
+			document.getElementById('tekst').onmouseout=function(){funoff()};
+			
+			function funon() {
+				document.getElementById('tekst').innerHTML='Kije i kamienie kości mi połamią, ale twoje słowa nigdy mnie nie zranią'
+			}
+			function funoff() {
+				document.getElementById('tekst').innerHTML='Sticks and stones may break my bones, but words will never harm me.'
+			}
+			
+			// Translation:
+			// Kije i kamienie kości mi połamią, ale twoje słowa nigdy mnie nie zranią
+			
+		</script>
+	</body>
+</html>
