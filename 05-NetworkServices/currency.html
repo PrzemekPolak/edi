@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Kursy walut</h1>
+    <p id="cur"> </p>
+    <script>
+        var euro = new XMLHttpRequest()
+        euro.onreadystatechange = function() {
+            if(this.status == 200 && this.readyState == 4) {
+                var p1 = JSON.parse(euro.responseText) 
+            var p = document.createElement("p")
+            p.innerText = p1['currency'] +' '+ p1['rates']['0']['mid']
+            document.getElementById("cur").appendChild(p)
+            }
+        }
+        euro.open('GET','http://api.nbp.pl/api/exchangerates/rates/a/eur/')
+        euro.send()
+
+        var dolar = new XMLHttpRequest()
+        dolar.onreadystatechange = function() {
+            if(this.status == 200 && this.readyState == 4) {
+                var p2 = JSON.parse(dolar.responseText) 
+            var p = document.createElement("p")
+            p.innerText = p2['currency'] +' '+ p2['rates']['0']['mid']
+            document.getElementById("cur").appendChild(p)
+            }
+        }
+        dolar.open('GET','http://api.nbp.pl/api/exchangerates/rates/a/usd/')
+        dolar.send()
+
+        var funt = new XMLHttpRequest()
+        funt.onreadystatechange = function() {
+            if(this.status == 200 && this.readyState == 4) {
+                var p3 = JSON.parse(funt.responseText) 
+            var p = document.createElement("p")
+            p.innerText = p3['currency'] +' '+ p3['rates']['0']['mid']
+            document.getElementById("cur").appendChild(p)
+            }
+        }
+        funt.open('GET','http://api.nbp.pl/api/exchangerates/rates/a/gbp/')
+        funt.send()
+
+    </script>
+</body>
+</html>

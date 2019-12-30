@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>People</h1>
+    <p id='spis'></p>>
+    <input id="button" type="button" value="Display people" onclick="start">
+    <script>
+        function start() {
+            var dane = new XMLHttpRequest
+            dane.onreadystatechange = function() {
+                if(this.status == 200 && this.readyState == 4) {
+                    var d = JSON.parse(dane.responseText)
+                    var p = document.createElement('p')
+                    for (i=1; i<30; i++) {
+                        p.innerText = d['name'] + ' ' + d['surname'] + ' ' + d['age'] + ' ' + d['country'] + ' ' + d['email'] 
+                    }
+                }
+            }
+            dane.open('GET','people.json')
+            dane.send()
+        }
+    </script>
+    
+</body>
+</html>
